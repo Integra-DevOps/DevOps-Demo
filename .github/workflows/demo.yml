@@ -49,8 +49,11 @@ jobs:
       - name: Wait for approval
         uses: trstringer/manual-approval@v1
         with:
+          secret: ${{ github.TOKEN }}
           approvers: "atulshelke"
           minimum-approvals: 1
+          issue-title: "Manual Approval Required for Terraform Apply"
+          issue-body: "Please approve or deny the deployment."
       # Runs a single command using the runners shell
       - name: Deploy script
         run: echo Hello, world! from Deploy job
