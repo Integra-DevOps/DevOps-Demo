@@ -50,9 +50,9 @@ jobs:
         uses: trstringer/manual-approval@v1
         with:
           secret: ${{ github.TOKEN }}
-          approvers: "atulshelke"
+          approvers: "DevOps"
           minimum-approvals: 1
-          issue-title: "Manual Approval Required for Terraform Apply"
+          issue-title: "Manual Approval Required for Deployment"
           issue-body: "Please approve or deny the deployment."
       # Runs a single command using the runners shell
       - name: Deploy script
