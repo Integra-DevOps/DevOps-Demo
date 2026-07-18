@@ -50,7 +50,7 @@ jobs:
         uses: trstringer/manual-approval@v1
         with:
           secret: ${{ github.TOKEN }}
-          approvers: DevOps
+          approvers: devops
           minimum-approvals: 1
           issue-title: "Manual Approval Required for Deployment"
           issue-body: "Please approve or deny the deployment."
