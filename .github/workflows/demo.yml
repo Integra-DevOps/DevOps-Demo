@@ -35,6 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+
+          
   deploy:
 
     needs: build
@@ -44,6 +46,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
 
+      - name: Wait for approval
+        uses: trstringer/manual-approval@v1
+        with:
+          approvers: atulshelke
+          minimum-approvals: 1
       # Runs a single command using the runners shell
       - name: Deploy script
         run: echo Hello, world! from Deploy job
