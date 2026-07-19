@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Demo Github Action - Pipeline
+name: Demo Github Action - Dotnet Pipeline
 
 # Controls when the workflow will run
 on: 
@@ -39,10 +39,10 @@ jobs:
         run: dotnet restore ./MyDemoApp/MyDemoApp.csproj
 
       - name: Build
-        run: dotnet build --no-restore
+        run: dotnet build --no-restore ./MyDemoApp/MyDemoApp.csproj
 
       - name: Test with the dotnet CLI
-        run: dotnet test --no-build   
+        run: dotnet test --no-build ./MyDemoApp/MyDemoApp.csproj
 
 
       # Runs a single command using the runners shell
