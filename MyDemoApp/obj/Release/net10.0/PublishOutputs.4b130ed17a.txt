@@ -1,0 +1,7 @@
+D:\DemoApp\MyDemoApp\publish\MyDemoApp.exe
+D:\DemoApp\MyDemoApp\publish\appsettings.Development.json
+D:\DemoApp\MyDemoApp\publish\appsettings.json
+D:\DemoApp\MyDemoApp\publish\MyDemoApp.dll
+D:\DemoApp\MyDemoApp\publish\MyDemoApp.deps.json
+D:\DemoApp\MyDemoApp\publish\MyDemoApp.runtimeconfig.json
+D:\DemoApp\MyDemoApp\publish\MyDemoApp.pdb

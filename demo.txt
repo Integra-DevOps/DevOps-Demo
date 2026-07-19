@@ -1,4 +1,0 @@
-This is  demo file for git demo
-
-Adding some new lines
-
